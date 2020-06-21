@@ -1,5 +1,6 @@
-# stackpath-anycast-terraform-container
-Terraform Anycast setup on stackpath using containers
+# stackpath-anycast-terrafor,
+
+Terraform Anycast setup on stackpath using containers and/or VM's
 
 to run this, first set the enviroment variables, Set enviroment variables like this:
 
