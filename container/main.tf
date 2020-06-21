@@ -39,7 +39,7 @@ resource "stackpath_compute_workload" "my-anycast-workload" {
       enable_implicit_network_policy = true
     }
 
-    # Nginx image to use for the container
+    # image to use for the container
     image = "atoonk/pythonweb:latest"
 
     # Override the command that's used to execute the container. If this option 
@@ -61,8 +61,8 @@ resource "stackpath_compute_workload" "my-anycast-workload" {
 
   target {
     name         = "global"
-    min_replicas = 2
-    max_replicas = 2
+    min_replicas = 3
+    max_replicas = 4
     scale_settings {
       metrics {
         metric = "cpu"
@@ -70,7 +70,7 @@ resource "stackpath_compute_workload" "my-anycast-workload" {
         average_utilization = 50
       }
     }
-    # Deploy these 1 to 2 instances in Dallas, TX, USA and Amsterdam, NL.
+    # Deploy these 1 to 2 instances in Dallas and Seattle
     deployment_scope = "cityCode"
     selector {
       key      = "cityCode"
