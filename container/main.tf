@@ -62,7 +62,7 @@ resource "stackpath_compute_workload" "my-anycast-workload" {
   target {
     name         = "global"
     min_replicas = 2
-    max_replicas = 3
+    max_replicas = 2
     scale_settings {
       metrics {
         metric = "cpu"

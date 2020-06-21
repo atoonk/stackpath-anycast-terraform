@@ -8,7 +8,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         # Construct a server response.
 
-        message = str(os.environ)
+        message = str(os.environ['HOSTNAME']) + "\n"
 
         self.send_response(200)
         self.send_header('Content-Type',
