@@ -25,3 +25,9 @@ get the anycast IP via web or
 you should now have an anycasted service running on that IP port 5000.
 
 10 secs of work and you have global workload :)
+
+To clean up and shut down run:
+```
+terraform destroy
+```
+
