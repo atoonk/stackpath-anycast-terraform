@@ -10,7 +10,8 @@ export TF_VAR_stackpath_client_secret=xxx
 export TF_VAR_stackpath_stack_id=xxx  #Stackpath speak for project. https://control.stackpath.com/stacks/ it's the slug
 ```
 
-Then run terraform
+Run terrafrom from either the VM or Container directory:
+
 
 ```
 terraform init
