@@ -70,7 +70,7 @@ resource "stackpath_compute_workload" "my-anycast-workload" {
         average_utilization = 50
       }
     }
-    # Deploy these 1 to 2 instances in Dallas and Seattle
+    # Deploy these  instances in Dallas and Seattle
     deployment_scope = "cityCode"
     selector {
       key      = "cityCode"
